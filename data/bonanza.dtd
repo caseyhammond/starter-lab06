@@ -4,7 +4,7 @@ Order placement data for Barker Bob's Burger Bar's Bigger Better Burger Bonanza
 -->
 
 <!-- An order identifies the customer, order type, burgers, and anything special  -->
-<!ELEMENT order (customer, delivery?, burger+, special)>
+<!ELEMENT order (customer, delivery?, burger+, special?)>
 
 <!-- A customer is identidied simply by their name -->
 <!ELEMENT customer (#PCDATA)>
@@ -29,7 +29,7 @@ Burger customization:
     - special instructions
     - an optional name, should the customer wish to propose this as a menu item
 -->
-<!ELEMENT burger (patty, cheese, topping*, sauce*, instructions?, name?)>
+<!ELEMENT burger (patty, cheeses, topping*, sauce*, instructions?, name?)>
 
 <!-- A patty can be one of five tyoes (assume beer), and might be named explicitly -->
 <!ELEMENT patty (#PCDATA)>
