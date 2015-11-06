@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Order #3 will have two cheeseburgers for Casey, and deivery
+-->
+
+<!DOCTYPE order SYSTEM 'bonanza.dtd'>
+
+<order type="takeout">
+    <customer>Casey</customer>
+    <burger>
+        <patty type="beef" />
+        <cheeses top="american" bottom="jack"/>
+        <topping type="bacon"/>
+        <topping type="shrooms"/>
+        <topping type="avocado"/>
+        <topping type="egg"/>
+        <topping type="lettuce"/>
+        <sauce type="ketchup"/>
+        <sauce type="mayo"/>
+    </burger>
+    <burger>
+        <patty type="bison"/>
+        <cheeses top="brie"/>
+        <topping type="dill"/>
+        <instructions>Peanut Butter on the bottom</instructions>
+        <name>#9 The Disgusting Burger</name>
+    </burger>
+</order>
